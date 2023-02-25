@@ -1,0 +1,109 @@
+<style>body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blue;
+  }
+  
+  table{
+	font-family: sans-serif;
+	border-collapse: collapse;
+  }
+  
+
+  
+  tbody{
+	background-color: #eee;
+	color: #555;
+  }
+  
+  
+  @media screen and (max-width: 600px){
+	thead{
+	  display: none;
+	}
+  
+	td{
+	  display: block;
+	}
+  
+	td:first-child{
+		background-image: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);	 
+		 color: #fff;
+		 
+	  text-align: center;
+	}
+	
+	td:nth-child(2)::before{
+	  content: "Company";
+	}
+  
+	td:nth-child(3)::before{
+	  content: "Age";
+	}
+  
+	td:nth-child(4)::before{
+	  content: "Designation";
+	}
+  
+	td:nth-child(5)::before{
+	  content: "Hobbies";
+	}
+  
+	td{
+	  text-align: right;
+	}
+  
+	td::before{
+	  float: left;
+	  margin-right: 3rem;
+	  font-weight: bold;
+	}
+  }</style>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+  </head>
+  <body>
+	<table>
+		<thead>
+		 <tr>
+		  <th>Name</th>
+		  <th>Company</th>
+		  <th>Age</th>
+		  <th>Designation</th>
+		  <th>Hobbies</th>
+		 </tr>
+		</thead>
+		<tbody>
+		 <tr>
+		  <td>John</td>
+		  <td>Google</td>
+		  <td>28</td>
+		  <td>Developer</td>
+		  <td>Swimming</td>
+		 </tr>
+		 <tr>
+		  <td>Linda</td>
+		  <td>FaceBook</td>
+		  <td>26</td>
+		  <td>Designer</td>
+		  <td>Football</td>
+		 </tr>
+		 <tr>
+		  <td>Shawn</td>
+		  <td>Apple</td>
+		  <td>35</td>
+		  <td>Branding</td>
+		  <td>Surfing</td>
+		 </tr>
+		</tbody>
+	   </table>
+	
+  </body>
+  </html>
