@@ -5,9 +5,9 @@
     //بداية مرحلة الدخوول للحساب
     
     // الربط بقاعدة البيانات
-    $username = "bb0008fa13895e";
-    $password = "855e553e" ;
-    $database = new PDO("mysql:host=eu-cdbr-west-03.cleardb.net; dbname=heroku_86d27cbc62bff9e;",$username,$password);
+    $username = "";
+    $password = "" ;
+    $database = new PDO("mysql:host=; dbname=;",$username,$password);
 
      if(isset($_POST['login1'])){
         $login = $database->prepare("SELECT * FROM teachers WHERE Email = :Email AND Password = :Password " );
